@@ -15,10 +15,14 @@ Inspired by Zobie and Zorro chasing birds in the backyard ;)
 
 Download and install [nodejs](http://nodejs.org/) and then run the following to install Grunt and Bower:
 
-`npm install -g grunt-cli`
-`npm install -g grunt`
-`npm install -g bower`
+```
+npm install -g grunt-cli
+npm install -g grunt
+npm install -g bower
+```
 
 To run the development server, go to the root directory of the project and run:
 
-`grunt`
+```
+grunt
+```
