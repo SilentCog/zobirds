@@ -11,7 +11,17 @@ Inspired by Zobie and Zorro chasing birds in the backyard ;)
 
 ## Development
 
-### Prerequisites
+### Vagrant
+
+This project includes a [Vagrant](https://www.vagrantup.com/) development server. Ensure that [VirtualBox](https://www.virtualbox.org/) or your favorite virtualization software.
+
+The dev environment requires the vagrant-berkshelf plugin:
+
+```
+vagrant plugin install vagrant-berkshelf
+```
+
+### Prerequisites (if not using vagrant)
 
 Download and install [nodejs](http://nodejs.org/) and then run the following to install Grunt and Bower:
 
