@@ -16,15 +16,25 @@ Inspired by Zobie and Zorro chasing birds in the backyard ;)
 This project includes a [Vagrant](https://www.vagrantup.com/) development server. Ensure that [VirtualBox](https://www.virtualbox.org/) or your favorite virtualization software.
 
 The dev environment requires the vagrant-berkshelf plugin:
-
 ```
 vagrant plugin install vagrant-berkshelf
+```
+
+Besure to be in the `<zobirds root directory>/Vagrant` directory and run:
+```
+vagrant up
+vagrant ssh
+```
+
+Now that you're in the virtual machine, navigate to the project directory and start the server:
+```
+cd project/phaser
+grunt
 ```
 
 ### Prerequisites (if not using vagrant)
 
 Download and install [nodejs](http://nodejs.org/) and then run the following to install Grunt and Bower:
-
 ```
 npm install -g grunt-cli
 npm install -g grunt
@@ -32,7 +42,6 @@ npm install -g bower
 ```
 
 To run the development server, go to the root directory of the project and run:
-
 ```
 grunt
 ```
