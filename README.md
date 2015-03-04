@@ -32,6 +32,8 @@ cd project/phaser
 grunt
 ```
 
+Now, in your browser, navigate to `http://localhost:8888/` and you should see the Phaser app.
+
 ### Prerequisites (if not using vagrant)
 
 Download and install [nodejs](http://nodejs.org/) and then run the following to install Grunt and Bower:
