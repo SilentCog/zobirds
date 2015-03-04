@@ -2,3 +2,5 @@ node_modules
 *.log
 bower_components
 .idea
+.vagrant
+Berksfile.lock
