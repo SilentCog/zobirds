@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Configuring Nginx"
 
 sudo rm /etc/nginx/sites-available/default
@@ -10,4 +12,4 @@ sudo rm /etc/nginx/sites-enabled/default
 
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
  
-service nginx restart > /dev/null
+sudo service nginx restart > /dev/null

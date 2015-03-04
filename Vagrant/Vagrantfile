@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.synced_folder "../", "/home/vagrant/project"
+  config.vm.synced_folder "../.", "/home/vagrant/project"
 
   config.vm.provider "virtualbox" do |v|
     v.name = "ZoBirds Vagrant Machine"
@@ -32,7 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Run Shell Scripts
   config.vm.provision "shell" do |s|
-    s.inline = "/home/vagrant/project/vagrant/provision.sh"
+    s.path = "provision.sh"
   end
 
 end
